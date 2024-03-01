@@ -10,17 +10,18 @@ body {
     flex-direction: column;
     align-items: center;
     font-family: "Hanken Grotesk", sans-serif;
-    background-color: hsl(221, 100%, 96%);
+    background-color: hsl(0, 0%, 100%);
 }
 .container {
     width: 740px;
     display: flex;
     background-color: hsl(0, 0%, 100%);
-    margin: 10% 0;
+    margin: 20% 0  1%;
     border-radius: 30px;
+    box-shadow: 0 0 45px hsl(241, 100%, 89%);
 }
 .right-section {
-    background-color: hsl(241, 81%, 54%);
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -36,7 +37,7 @@ body {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    background-color: hsla(256, 72%, 46%, 1);
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
     display: flex;
     flex-direction: column;
 }
@@ -90,19 +91,19 @@ ul li .static-name {
     display: flex;
 }
 #a{
-    background-color: hsl(0, 100%, 95%);
+    background-color: hsl(0, 100%, 98%);
     color: hsl(0, 100%, 67%)
 }
 #b{
-    background-color: hsl(39, 100%, 95%);
+    background-color: hsl(39, 100%, 98%);
     color: hsl(39, 100%, 56%);
 }
 #c{
-    background-color: hsl(166, 100%, 95%);
+    background-color: hsl(166, 100%, 98%);
     color: hsl(166, 100%, 37%);
 }
 #d{
-    background-color: hsl(234, 85%, 95%);
+    background-color: hsl(234, 85%, 98%);
     color: hsl(234, 85%, 45%);
 }
 .numbers {
@@ -126,3 +127,8 @@ a:hover {
     background-color: hsl(241, 81%, 54%);
 }
 
+@media screen and (max-width: 740px) {
+    body {
+      background-color: lightgreen;
+    }
+  }
